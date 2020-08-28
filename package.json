@@ -17,7 +17,44 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "kentcdodds",
+      "kentcdodds/react",
+      "kentcdodds/jsx-a11y"
+    ],
+    "rules": {
+      "jsx-a11y/autocomplete-valid": 0
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": [
+            "src"
+          ],
+          "extensions": [
+            ".js"
+          ]
+        }
+      }
+    }
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": false,
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsxBracketSameLine": false,
+    "jsxSingleQuote": false,
+    "printWidth": 80,
+    "proseWrap": "always",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
   },
   "browserslist": {
     "production": [
@@ -30,5 +67,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-kentcdodds": "^14.15.0"
   }
 }
