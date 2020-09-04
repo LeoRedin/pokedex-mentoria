@@ -8,6 +8,8 @@ function Routes() {
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/pokemons" component={Pokemons} />
+      <Route exact path="/pokemon/:name" component={Pokemons} />
+      <Route exact path="/pokemon/:id" component={Pokemons} />
       <Route exact path="/geracoes" component={Geracoes} />
       <Route exact path="/sobre" component={Sobre} />
       <Redirect from="*" to="/" />
