@@ -1,17 +1,18 @@
 import React from 'react'
 
 import {Menu} from 'components/Menu'
+import pokeball from 'assets/images/pokeball.png'
 
-import {Container, Content, ContainerTitle, Title, Subtitle} from './styles'
+import {Container, Content, Logo, Title} from './styles'
 
 function Header() {
   return (
     <Container>
       <Content>
-        <ContainerTitle>
+        <Logo>
+          <img src={pokeball} alt="pokeball" width="40" height="40" />
           <Title>Pokédex</Title>
-          <Subtitle>Ache seu pokémon favorito!</Subtitle>
-        </ContainerTitle>
+        </Logo>
         <Menu />
       </Content>
     </Container>
